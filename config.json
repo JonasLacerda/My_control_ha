@@ -1,0 +1,31 @@
+{
+    "name": "my_control",
+    "icon": "icon.png",
+    "version": "1.0",
+    "slug": "custom_mqtt_ws",
+    "description": "Bridge entre MQTT e Home Assistant WebSocket",
+    "startup": "services",
+    "boot": "auto",
+    "homeassistant": "2023.0.0",
+    "arch": ["amd64", "armv7", "aarch64"],
+    "ports": {},
+    "privileged": [],
+    "options": {
+      "ha_host": "192.168.1.21",
+      "ha_port": 8123,
+      "ha_token": "",
+      "mqtt_broker": "mqtt://192.168.1.21",
+      "mqtt_user": "",
+      "mqtt_pass": "",
+      "mqtt_topic": "node/cmd"
+    },
+    "schema": {
+      "ha_host": "str",
+      "ha_port": "int",
+      "ha_token": "str",
+      "mqtt_broker": "str",
+      "mqtt_user": "str?",
+      "mqtt_pass": "str?",
+      "mqtt_topic": "str?"
+    }
+  }
