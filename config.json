@@ -11,10 +11,10 @@
     "ports": {},
     "privileged": [],
     "options": {
-      "ha_host": "192.168.1.21",
+      "ha_host": "localhost.local",
       "ha_port": 8123,
       "ha_token": "",
-      "mqtt_broker": "mqtt://192.168.1.21",
+      "mqtt_broker": "mqtt://locahost.local",
       "mqtt_user": "",
       "mqtt_pass": "",
       "mqtt_topic": "node/cmd"
